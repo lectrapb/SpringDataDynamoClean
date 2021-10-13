@@ -1,0 +1,21 @@
+apply plugin: 'org.springframework.boot'
+
+dependencies {
+	implementation project(':validate-token')
+	implementation project(':dinamodb')
+    implementation project(':model')
+    implementation project(':usecase')
+    implementation 'org.springframework.boot:spring-boot-starter'
+    runtimeOnly('org.springframework.boot:spring-boot-devtools')
+    //-----------------------------------------------------------
+    implementation 'com.amazonaws:aws-java-sdk-sts:1.11.749'
+    implementation 'org.springframework.data:spring-data-jpa:2.5.3'
+    implementation  'com.amazonaws:aws-java-sdk-dynamodb:1.11.64'
+    implementation  'com.github.derjust:spring-data-dynamodb:5.1.0'
+    implementation  'org.projectlombok:lombok:1.18.20'
+}
+
+task explodedJar(type: Copy) {
+    with jar
+    into "${buildDir}/exploded"
+}

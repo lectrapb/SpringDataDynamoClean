@@ -1,0 +1,10 @@
+dependencies {
+    implementation project(':model')
+    implementation 'org.springframework:spring-context'
+    //------------------------------------------------------------
+    implementation 'org.modelmapper:modelmapper:2.4.4'
+    implementation 'org.springframework.data:spring-data-jpa:2.5.3'
+    implementation  'com.amazonaws:aws-java-sdk-dynamodb:1.11.64'
+    implementation  'com.github.derjust:spring-data-dynamodb:5.1.0'
+    implementation  'org.projectlombok:lombok:1.18.20'
+}

@@ -1,0 +1,22 @@
+##Spring Configuration
+server:
+  port: 8080
+spring:
+  main:
+    allow-bean-definition-overriding: true
+    autoconfigure:
+      exclude:
+        - "org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration"
+  application:
+    name: dynamo
+  devtools:
+    add-properties: false
+amazon:
+  region: "us-east-1"
+  dynamodb:
+    endpoint: http://localhost:8000/
+    tableName: aut-bancolombiapay-ambiente-qa-tokenizacion
+  aws:
+    accesskey: AKIASJABT4QJ2BI4XFM2
+    secretkey: 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
+

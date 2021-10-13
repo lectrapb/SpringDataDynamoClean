@@ -1,6 +1,5 @@
-
-# Created by https://www.gitignore.io/api/java,maven,gradle,eclipse,intellij,netbeans
-# Edit at https://www.gitignore.io/?templates=java,maven,gradle,eclipse,intellij,netbeans
+# Created by https://www.gitignore.io/api/java,linux,macos,sonar,gradle,windows,eclipse,sonarqube,sublimetext,intellij+all,visualstudiocode
+# Edit at https://www.gitignore.io/?templates=java,linux,macos,sonar,gradle,windows,eclipse,sonarqube,sublimetext,intellij+all,visualstudiocode
 
 ### Eclipse ###
 .metadata
@@ -102,11 +101,11 @@ local.properties
 # When using Gradle or Maven with auto-import, you should exclude module files,
 # since they will be recreated, and may cause churn.  Uncomment if using
 # auto-import.
- .idea/modules.xml
- .idea/*.iml
- .idea/modules
- *.iml
- *.ipr
+# .idea/modules.xml
+# .idea/*.iml
+# .idea/modules
+# *.iml
+# *.ipr
 
 # CMake
 cmake-build-*/
@@ -182,48 +181,6 @@ modules.xml
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
-### Maven ###
-target/
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.versionsBackup
-pom.xml.next
-release.properties
-dependency-reduced-pom.xml
-buildNumber.properties
-.mvn/timing.properties
-.mvn/wrapper/maven-wrapper.jar
-.flattened-pom.xml
-
-### NetBeans ###
-**/nbproject/private/
-**/nbproject/Makefile-*.mk
-**/nbproject/Package-*.bash
-build/
-nbbuild/
-dist/
-nbdist/
-.nb-gradle/
-
-### Gradle ###
-.gradle
-
-# Ignore Gradle GUI config
-gradle-app.setting
-
-# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
-!gradle-wrapper.jar
-
-# Cache of project
-.gradletasknamecache
-
-# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
-# gradle/wrapper/gradle-wrapper.properties
-
-### Gradle Patch ###
-**/build/
-
-
 ### Linux ###
 *~
 
@@ -238,38 +195,6 @@ gradle-app.setting
 
 # .nfs files are created when an open file is removed but is still being accessed
 .nfs*
-
-### Windows ###
-# Windows thumbnail cache files
-Thumbs.db
-Thumbs.db:encryptable
-ehthumbs.db
-ehthumbs_vista.db
-
-# Dump file
-*.stackdump
-
-# Folder config file
-[Dd]esktop.ini
-
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Windows Installer files
-*.cab
-*.msi
-*.msix
-*.msm
-*.msp
-
-# Windows shortcuts
-*.lnk
-
-
-# End of https://www.gitignore.io/api/java,maven,gradle,eclipse,intellij,netbeans
-
-# Created by https://www.toptal.com/developers/gitignore/api/macos
-# Edit at https://www.toptal.com/developers/gitignore?templates=macos
 
 ### macOS ###
 # General
@@ -299,11 +224,113 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-# End of https://www.toptal.com/developers/gitignore/api/macos
+### Sonar ###
+#Sonar generated dir
+/.sonar/
+
+### SonarQube ###
+# SonarQube ignore files.
+#
+# https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner
+# Sonar Scanner working directories
+.sonar/
+.scannerwork/
+
+# http://www.sonarlint.org/commandline/
+# SonarLint working directories, configuration files (including credentials)
+.sonarlint/
+
+### SublimeText ###
+# Cache files for Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# Workspace files are user-specific
+*.sublime-workspace
+
+# Project files should be checked into the repository, unless a significant
+# proportion of contributors will probably not be using Sublime Text
+# *.sublime-project
+
+# SFTP configuration file
+sftp-config.json
+
+# Package control specific files
+Package Control.last-run
+Package Control.ca-list
+Package Control.ca-bundle
+Package Control.system-ca-bundle
+Package Control.cache/
+Package Control.ca-certs/
+Package Control.merged-ca-bundle
+Package Control.user-ca-bundle
+oscrypto-ca-bundle.crt
+bh_unicode_properties.cache
+
+# Sublime-github package stores a github token in this file
+# https://packagecontrol.io/packages/sublime-github
+GitHub.sublime-settings
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+
+### Windows ###
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+### Gradle ###
+.gradle
+build/
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Cache of project
+.gradletasknamecache
+
+# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
+# gradle/wrapper/gradle-wrapper.properties
+
+### Gradle Patch ###
+**/build/
+
+# End of https://www.gitignore.io/api/java,linux,macos,sonar,gradle,windows,eclipse,sonarqube,sublimetext,intellij+all,visualstudiocode
 
 # HPROF
 # -----
 *.hprof
 
-#gradle wrapper
-gradle/
